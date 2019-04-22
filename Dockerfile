@@ -191,7 +191,6 @@ USER airflow
 WORKDIR ${AIRFLOW_HOME}
 
 COPY --chown=airflow:airflow ./scripts/docker/entrypoint.sh /entrypoint.sh
-COPY --chown=airflow:airflow ./airflow.cfg airflow.cfg
 
 EXPOSE 8080
 ENTRYPOINT ["/usr/local/bin/dumb-init", "--", "/entrypoint.sh"]
