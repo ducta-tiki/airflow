@@ -48,6 +48,7 @@
 # Setup/version configuration
 !setup.cfg
 !setup.py
+!airflow.cfg
 
 # Entrypoint script
 !scripts/docker/entrypoint.sh
